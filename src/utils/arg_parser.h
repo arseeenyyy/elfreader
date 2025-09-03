@@ -9,8 +9,7 @@ struct ProgramOptions {
     std::string filename;
 }; 
 
-ProgramOptions parseArguments(int argc, char* argv[]);
-
+ProgramOptions parse_arguments(int argc, char* argv[]);
 
 #endif
 
