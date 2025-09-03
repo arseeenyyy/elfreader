@@ -1,5 +1,14 @@
 cmake_minimum_required(VERSION 3.10)
+project(elfreader)
 
-project(elfreader) 
+set(CMAKE_CXX_STANDART 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(elfreader src/main.cpp)
+
+add_executable(elfreader
+    src/main.cpp
+    src/elf_parser.cpp
+    src/utils/file_reader.cpp
+)
+
+target_include_directories(elfreader PRIVATE src)
