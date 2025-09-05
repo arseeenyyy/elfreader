@@ -26,5 +26,8 @@ ProgramOptions parse_arguments(int argc, char* argv[]) {
         }
     } 
     return options;
+}
 
+AppMode get_mode(int argc, char* argv[]) {
+    
 }

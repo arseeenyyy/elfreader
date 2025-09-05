@@ -11,5 +11,7 @@ struct ProgramOptions {
 
 ProgramOptions parse_arguments(int argc, char* argv[]);
 
+AppMode get_mode(int argc, char* argv[]);
+
 #endif
 
